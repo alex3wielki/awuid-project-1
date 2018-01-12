@@ -9027,13 +9027,5 @@ module.exports = function (regExp, replace) {
 "use strict";
 
 
-function hi() {
-  var name = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : "Alex";
-
-  return "Hi " + name;
-}
-
-console.log(hi());
-
 /***/ })
 /******/ ]);
