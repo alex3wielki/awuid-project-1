@@ -1,5 +1,4 @@
 <?php include_once("./shared/header.php")?>
-    <!-- <div class="divider container mx-auto"></div> -->
 
     <main class="container">
         <figure class="row col-12 mx-auto">

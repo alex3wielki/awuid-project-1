@@ -15,7 +15,7 @@ html {
 }
 
 header {
-  background: url("./../../assets/img/cars.jpg");
+  background-image: url("./../../assets/img/cars.jpg");
   height: 95vh;
   background-repeat: no-repeat;
   background-size: cover;
@@ -68,6 +68,7 @@ main {
     }
   }
 }
+
 img {
   border-radius: 5em;
 }
