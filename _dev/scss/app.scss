@@ -1,0 +1,85 @@
+html {
+  font-size: 100%;
+  font-family: "Lato", sans-serif;
+  body {
+    background: silver;
+    color: black;
+  }
+}
+
+@mixin determineFontSize() {
+  @media screen and (max-width: 900px) {
+    font-size: 3em;
+  }
+  font-size: 6em;
+}
+
+header {
+  background: url("./../../assets/img/cars.jpg");
+  height: 95vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0, 0;
+  display: grid; // This is great!
+  h1 {
+    margin: auto; // This is great!
+    color: white;
+    @include determineFontSize();
+    text-shadow: 1px 1px 10px black;
+  }
+}
+
+main {
+  margin-top: 40px;
+  figure {
+    background: white;
+    $radius: 2em;
+    border-radius: $radius;
+    img {
+      border-radius: $radius;
+    }
+    figcaption {
+      display: grid;
+      h2 {
+        margin: auto;
+        @include determineFontSize();
+        color: red;
+        font-family: "Anton", sans-serif;
+      }
+    }
+  }
+  section {
+    padding: 15px 0 0 0;
+    h3 {
+      display: inline;
+      a {
+        color: red;
+        font-weight: bold;
+        transition-duration: 0.5s;
+      }
+      a:hover {
+        color: darkred;
+      }
+    }
+    img {
+      display: block;
+      border-radius: 1em;
+      width: 50%;
+    }
+  }
+}
+img {
+  border-radius: 5em;
+}
+
+footer {
+  padding: 10px;
+}
+
+.divider {
+  background: silver;
+  height: 20px;
+  border-radius: 2rem;
+  width: 100%;
+  margin: 10px 0;
+}
